@@ -9,10 +9,8 @@ export type BoardSlotState = "empty" | Player;
 export type BoardConfig = {
   rowCount: number;
   columnCount: number;
-  winningSequenceCount: 4;
+  winningSequenceCount: number;
 };
-
-export type GameStatus = "playing" | "stalemate";
 
 export type Move = {
   row: number;
