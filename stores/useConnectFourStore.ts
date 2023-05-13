@@ -160,8 +160,8 @@ function checkForWin(board: BoardSlotState[][]): Player | null {
   return null;
 }
 
-function checkForStalemate(column: BoardSlotState[]): boolean {
-  if (column.includes("empty")) {
+function checkForStalemate(row: BoardSlotState[]): boolean {
+  if (row.includes("empty")) {
     return false;
   } else {
     return true;
